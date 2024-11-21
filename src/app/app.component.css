@@ -1,0 +1,17 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.container mat-toolbar {
+    background-color: bisque;
+}
+
+.container mat-toolbar mat-icon {
+   color: rgb(15, 173, 236);
+}
+
+.container mat-toolbar span {
+    margin-left: 8px;
+}
+

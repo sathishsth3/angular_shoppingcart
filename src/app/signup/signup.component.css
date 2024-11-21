@@ -1,0 +1,48 @@
+
+.container {
+   padding: 60px 0;
+}
+.container .card {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container .card mat-card {
+    padding: 10px 5px;
+}
+
+.container .card mat-card  .signup-form {
+    width: 100%;
+}
+
+.container .card mat-card mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.container .card mat-card mat-card-title {
+    margin: 12px 0 30px;
+    font-size: 2.2rem;
+    color: rgb(0, 121, 168);
+}
+
+.container .card mat-card mat-form-field {
+    width: 100%;
+}
+
+.container .card mat-card mat-card-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .card mat-card mat-card-actions p {
+    cursor: pointer;
+    color: rgb(0, 121, 168);
+    font-size: 0.9rem;
+    margin: 8px 0 2px;
+}
+
+.container .card mat-card mat-card-actions button {
+    padding: 0 26px;
+}
