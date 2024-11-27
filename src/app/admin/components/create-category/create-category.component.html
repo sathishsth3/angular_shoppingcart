@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card">
+        <mat-card appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Create Category</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form [formGroup]="categoryForm" (ngSubmit)="createCategory()" class="category-form">
+                    <mat-form-field class="example-full-width">
+                        <input type="text" matInput placeholder="Enter category name" formControlName="name">
+                        @if (categoryForm.get('name')?.invalid && categoryForm.get('name')?.touched) {
+                          <mat-error>Please enter category name</mat-error>
+                        }
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Description..." formControlName="description"></textarea>
+                        @if (categoryForm.get('description')?.invalid && categoryForm.get('description')?.touched) {
+                            <mat-error>Enter description</mat-error>
+                          }
+                      </mat-form-field>
+                    <mat-card-actions>
+                      <button type="submit" mat-flat-button  [disabled]="!categoryForm.valid">Create Category</button>
+                    </mat-card-actions>
+                </form>
+              </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

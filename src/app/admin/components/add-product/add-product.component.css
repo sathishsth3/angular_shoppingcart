@@ -1,0 +1,36 @@
+
+.container {
+    padding: 40px 0 10px;
+}
+.container .product-form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container .product-form h2 {
+    font-size: 2.2rem;
+    color: rgb(0, 121, 168);
+    text-align: center;
+    margin: 0;
+}
+
+.container .product-form mat-form-field {
+    width: 100%;
+}
+
+.container .product-form .image-upload-container, .submit-button {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .product-form .image-upload-container .image-container {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.container .product-form .image-upload-container .image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
